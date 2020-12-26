@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Base.gd" type="Script" id=1]
+
+[node name="Base" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="unique_code" type="LineEdit" parent="."]
+margin_left = 301.0
+margin_top = 201.0
+margin_right = 527.0
+margin_bottom = 248.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="connect_button" type="Button" parent="."]
+margin_left = 341.0
+margin_top = 268.0
+margin_right = 494.0
+margin_bottom = 311.0
+text = "Connect"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="connect_button" to="." method="_on_connect_button_pressed"]
